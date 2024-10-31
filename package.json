@@ -1,8 +1,9 @@
 {
   "name": "google-signin-jwt",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
+    "build:image": "docker build -f deployments/Dockerfile -t nbsdev/google-signin-jwt .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
