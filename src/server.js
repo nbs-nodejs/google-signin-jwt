@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Setup EJS
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(process.cwd(), 'views'));
 
 // Render login page
 const callbackPath = '/print-jwt';
